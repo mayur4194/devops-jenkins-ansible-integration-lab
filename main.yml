@@ -3,9 +3,8 @@
 - hosts: all
   become: true
   become_user: root
-  gather_facts: false
   tasks:
     - include_role:
-        name: httpd
+        name: apache
       
 ...
